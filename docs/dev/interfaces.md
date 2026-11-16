@@ -24,3 +24,23 @@ hash (`734e11ac1aabda7e8d55c6a8d162630186d35915`). It is not a reproduction
 of the original source or a replacement for its NDK ABI. Do not overwrite
 the API hash with the stock hash. XiaomiParts uses Java Binder proxies and
 does not compare hashes. Device runtime behavior still requires validation.
+
+## Displayfeature v2
+
+Source: [onelots/android_device_xiaomi_sm8650-common,
+351c39a0f8371f6cd625e57e64efd7740c55da5f](https://github.com/onelots/android_device_xiaomi_sm8650-common/commit/351c39a0f8371f6cd625e57e64efd7740c55da5f),
+`interfaces/displayfeature/`. Its nine method signatures and transaction IDs
+match Global OS3.0.305.0.WNCMIXM
+`vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so`.
+
+The stock proxy uses `FLAG_ONEWAY` for `notifyBrightness`, `sendMessage`,
+and `IDisplayFeatureCallback.displayfeatureInfoChanged`. Correct these
+upstream declarations to `oneway` and regenerate the local API snapshots
+with the platform AIDL compiler and `system/tools/aidl/build/hash_gen.sh`.
+`setFeature` remains synchronous at transaction 7. The Java dependency is
+`vendor.xiaomi.hardware.displayfeature_aidl-V2-java`, matching its package
+and descriptor; HIDL `displayfeature@1.0` is a different protocol.
+
+The stock hash is `e57e364757bc7b63a3a7e586585c5827115966d7`.
+As for touchfeature, the reconstructed snapshot has its own generated hash;
+it does not claim stock source identity or replace the stock NDK library.
