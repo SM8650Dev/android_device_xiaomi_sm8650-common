@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "nian0114/android_vendor_xiaomi_sm8650-common",
+    "target_path": "vendor/xiaomi/sm8650-common",
+    "branch": "lineage-23.2"
+  },
+  {
+    "repository": "lolipuru/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "lineage-23.2"
+  }
+]
