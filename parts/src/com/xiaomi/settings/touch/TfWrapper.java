@@ -47,9 +47,9 @@ public class TfWrapper {
         Log.d(TAG, "setTouchFeatureParams: " + params);
         try {
             if (params.valueArray != null) {
-                touchfeature.setEdgeMode(0, params.mode, params.valueArray, params.valueArray.length);
+                touchfeature.setModeLongValue(0, params.mode, params.valueArray.length, params.valueArray);
             } else {
-                touchfeature.setTouchMode(0, params.mode, params.value);
+                touchfeature.setModeValue(0, params.mode, params.value);
             }
         } catch (Exception e) {
             Log.e(TAG, "setTouchFeatureParams failed!", e);
