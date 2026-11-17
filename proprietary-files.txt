@@ -722,12 +722,6 @@ vendor/lib64/libhdcp2p2prov.so|04333ced366f6d08db1b882b8089b746e730af4a
 vendor/lib64/libhdcpsrm.so|ed448770d9badc99134c2444905cc9f62f49d1c2
 vendor/lib64/libmm-hdcpmgr.so|67f9e25bf2b78d29d5c4f870730b9f23c2f1ba7d
 
-# Hotword
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|368fc8e844306eef0effa37a02040da356d9b1e3
-product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk|1c18b1e33ee0dcfbaeb8d94cbd6f655259e332c3
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|01b74943dc0ae9353883298d36fba94128536c9e
-system_ext/framework/com.android.hotwordenrollment.common.util.jar|86baa7f5ff304ca3dae863a6954ec6b285ff984c
-
 # Graphics
 vendor/app/com.qualcomm.qti.gpudrivers.pineapple.api34/com.qualcomm.qti.gpudrivers.pineapple.api34.apk|ebbca05956b11846d103b5803f704dd83e138c4b
 vendor/gpu/kbc/sequence_manifest.bin|ec14c65fc1c9a06c8e08859b23e2a13f89a742cb
@@ -1657,7 +1651,6 @@ vendor/lib64/vendor.qti.sla.service@1.0-impl.so|14004742de879297056db13212bb8a8d
 vendor/lib64/vendor.qti.sla.service@1.0.so|2da93923935e141594f93b072e13336dd17688a6
 
 # Soter
-mi_ext/product/app/SoterService/SoterService.apk:product/app/SoterService/SoterService.apk|e5203f936309856684d7ecd71674ddba3917fbb3
 vendor/bin/vendor.qti.hardware.soter-provision|ceaa42c0f94aedae87bc3d5c96a3a293e1ccc8d7
 vendor/bin/hw/vendor.qti.hardware.soter-service|379f04ed1c7cbb17bd450a5d725c9fe2a585deeb
 vendor/etc/init/vendor.qti.hardware.soter-service.rc|6ccfa26f710a2fd59359830f85b4fefe5094e6ef
