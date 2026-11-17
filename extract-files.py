@@ -51,6 +51,12 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    # Let PowerHAL request vertical-scroll boost while perf tracks 30/45 fps.
+    'vendor/etc/perf/perfboostsconfig.xml': blob_fixup()
+        .regex_replace(
+            'Id="0x00001080" Type="1" Enable="true" Target="pineapple" Fps="60"',
+            'Id="0x00001080" Type="1" Enable="true" Target="pineapple"',
+        ),
     (
         'vendor/etc/media_codecs_pinaepple.xml', 
         'vendor/etc/media_codecs_pinaepple_vendor.xml'
