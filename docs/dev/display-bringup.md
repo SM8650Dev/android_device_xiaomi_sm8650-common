@@ -19,3 +19,18 @@ After the user builds and installs the updated vendor image, check the
 crash buffer at boot and exercise original/P3/sRGB modes while keeping
 SELinux enforcing. No persist writes or binary workarounds are required
 by this policy change.
+
+## TinyXML2 ABI
+
+The stock effect library allocates `0x308` bytes for `XMLDocument` in
+`ParamManager::getParam` before calling the two-argument constructor.
+The current unversioned TinyXML2 constructor writes through offset
+`0x36f`, past that allocation. The stock system library and Lineage's
+`libtinyxml2-v34` use the older layout. Resolve the effect library against
+`libtinyxml2-v34`, as already done for other stock display libraries.
+
+Keep the extractor fixup, source/fixed SHA-1 pair and generated Soong
+shared library dependency together. Changing permissions alone does not
+address this binary layout mismatch. The patched library's text bytes
+are unchanged; only its ELF dependency is rewritten. The fix requires a
+new vendor/odm build and installation before on-device validation.

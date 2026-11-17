@@ -91,6 +91,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcodec2_shim.so'),
     (
         'vendor.qti.hardware.display.composer-service',
+        'odm/lib64/hw/displayfeature.default.so',
         'vendor/lib64/libsnapdragoncolor-manager.so',
         'vendor/lib64/libdpps.so',
         'vendor/bin/poweropt-service',

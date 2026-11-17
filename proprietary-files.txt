@@ -471,7 +471,7 @@ vendor/etc/displayconfig/display_id_4630947256895775107.xml|37a4e2577cce7fd06788
 odm/etc/df_default.xml|06b6e68205a350e044a7f583d4487051751d6653
 
 # Displayfeature (libs)
-odm/lib64/hw/displayfeature.default.so|71d35a742518fd849b66bcddb30ee3f906f86e4f
+odm/lib64/hw/displayfeature.default.so|71d35a742518fd849b66bcddb30ee3f906f86e4f|664c7119b843b00f2bea25b069e5b5d98ef367f8
 odm/lib64/libadaptivehdr.so|c5f7b2cb4a7daf8325ceafa657981baf17879903
 odm/lib64/libbarrage.so|73b992b951fa47bfcd86abc615bc4e23adfb433d
 odm/lib64/libcolortempmode.so|17167e131d8a033336d2f97cb9cbc5efe0c658b8
