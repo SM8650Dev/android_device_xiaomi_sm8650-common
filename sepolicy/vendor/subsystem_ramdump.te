@@ -1,0 +1,6 @@
+# The stock collector uses SO_RCVBUFFORCE on its kernel uevent socket.
+# Its init service already requests NET_ADMIN; the domain exists only in
+# userdebug/eng builds, matching the QCOM subsystem_ramdump policy.
+userdebug_or_eng(`
+    allow vendor_subsystem_ramdump self:capability net_admin;
+')
