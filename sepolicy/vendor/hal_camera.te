@@ -68,3 +68,6 @@ allow hal_camera_default proc_stat:file r_file_perms;
 
 # Allow QSPM hal service accessing camera
 hal_client_domain(hal_camera_default, vendor_hal_qspmhal)
+
+# The stock camera provider opens its dedicated logging device read/write.
+allow hal_camera_default camlog_device:chr_file { getattr open read write };
