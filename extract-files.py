@@ -5,7 +5,9 @@
 #
 
 import extract_utils.tools
+from extract_utils.file import File
 from extract_utils.fixups_blob import (
+    BlobFixupCtx,
     blob_fixup,
     blob_fixups_user_type,
 )
@@ -50,7 +52,40 @@ lib_fixups: lib_fixups_user_type = {
     ): lib_fixup_remove,
 }
 
+
+def fixup_codec2_component_store_size(
+    ctx: BlobFixupCtx, file: File, file_path: str, *args, **kwargs,
+):
+    # CN services allocate 0x108 bytes; Lineage 23.2 HIDL 1.0/1.2 stores
+    # need 0x120 bytes, including their virtual RefBase subobject.
+    # Match each allocation call site and reject unfamiliar binaries.
+    sequences = {
+        'vendor.dolby.media.c2@1.0-service':
+            '00 21 80 52 53 02 00 94 e8 03 00 91 f3 03 00 aa',
+        'vendor.qti.media.c2@1.0-service':
+            '00 21 80 52 03 02 00 94 f5 03 00 aa 96 02 40 f9',
+        'vendor.qti.media.c2audio@1.0-service':
+            '00 21 80 52 54 04 00 94 f4 03 00 aa b6 02 40 f9',
+    }
+    original = bytes.fromhex(sequences[file.basename])
+    patched = bytes.fromhex('00 24 80 52') + original[4:]
+    with open(file_path, 'rb+') as blob:
+        data = blob.read()
+        if data.count(patched) == 1 and original not in data:
+            return
+        if data.count(original) != 1 or patched in data:
+            raise ValueError(f'Unexpected ComponentStore allocation in {file.dst}')
+        blob.seek(0)
+        blob.write(data.replace(original, patched, 1))
+
+
 blob_fixups: blob_fixups_user_type = {
+    (
+        'vendor/bin/hw/vendor.dolby.media.c2@1.0-service',
+        'vendor/bin/hw/vendor.qti.media.c2@1.0-service',
+        'vendor/bin/hw/vendor.qti.media.c2audio@1.0-service',
+    ): blob_fixup()
+        .call(fixup_codec2_component_store_size, need_tmp_dir=False),
     # The upstream parser selects the base/pineapple XML, not Xiaomi's _vendor XML.
     (
         'vendor/etc/media_codecs.xml',
