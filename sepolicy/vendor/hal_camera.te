@@ -54,6 +54,8 @@ set_prop(hal_camera_default, vendor_camera_p3enable_prop)
 set_prop(hal_camera_default, log_prop)
 set_prop(hal_camera_default, vendor_camera_prop)
 
+# The stock provider also publishes IAlwaysOn/miaonservicehal.
+hal_server_domain(hal_camera_default, hal_camera_aon)
 hal_server_domain(hal_camera_default, hal_aidlbgservice)
 hal_server_domain(hal_camera_default, hal_quickcamera)
 add_service(hal_camera_server, hal_aidlbgservice_service)
