@@ -51,6 +51,15 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    # The upstream parser selects the base/pineapple XML, not Xiaomi's _vendor XML.
+    (
+        'vendor/etc/media_codecs.xml',
+        'vendor/etc/media_codecs_pineapple.xml',
+    ): blob_fixup()
+        .regex_replace(
+            r'(<Include href="media_codecs_c2_audio\.xml" />)(?!\s*<Include href="media_codecs_dolby_audio\.xml")',
+            r'\1\n    <Include href="media_codecs_dolby_audio.xml" />',
+        ),
     # Let PowerHAL request vertical-scroll boost while perf tracks 30/45 fps.
     'vendor/etc/perf/perfboostsconfig.xml': blob_fixup()
         .regex_replace(
