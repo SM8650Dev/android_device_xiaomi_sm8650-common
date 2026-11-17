@@ -916,8 +916,8 @@ odm/lib64/vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk.so|c325fe825aa5f
 system_ext/lib64/libmmosal.so|9e67e6fb7e29c9b05bbd6259058c0d8474a290ae
 system_ext/lib64/libmmparser_lite.so|ef94ae07ad3a8484540a55d6aad9dd7b3bd4b060
 vendor/bin/init.qti.media.sh|f20063f343a75acbc676de09ed39b6e4db15ba9a
-vendor/bin/hw/vendor.qti.media.c2@1.0-service|b20d45c1523c925c6b17456a5f7b011052e3daed|b55814b8a4b299e6f658e806dadb9d792fe5016c
-vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|3676062ea32b4d6bfdb7f9f7473537e43735bf62|401973babc640486126b72eaf2a7953ec9aba61a
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|b20d45c1523c925c6b17456a5f7b011052e3daed
+vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|3676062ea32b4d6bfdb7f9f7473537e43735bf62
 vendor/etc/init/init.qti.media.rc|fee08dfb120803ed85e8f7a130762a90cc133bb2
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|5ecac903e1e5b709156e339e05bf6e4a156b5885
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc|51841b9c67dd26b7fe82e24109f1e0a663a3e04a
@@ -972,7 +972,7 @@ odm/etc/dolby/dax-default-spatializer.xml|74ca53a66cbfc83d915d2cc8f78f9c35f7ea8f
 odm/etc/surfaceflinger/dolby_vision.cfg|8fb2373f5fbe92ba18bf60c54c35107db0fb35c0
 odm/vendor/etc/dolby_vision.cfg|b1e532a7ba7ef470d1eb30aa7258670383e344aa
 odm/vendor/persist/display/dolby_vision.cfg|f18d2a0f0e9d02a7f6bab8d0324548242959df59
-vendor/bin/hw/vendor.dolby.media.c2@1.0-service|2195c1faa4eba03cdc26688b129b803fe75e2a1b|ff3e237b8af098e1568efc619176e9b9171f0a6e
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service|2195c1faa4eba03cdc26688b129b803fe75e2a1b
 vendor/etc/dolby/dax-default-spatializer.xml|ac56369d1ca73cd07117a961190da4fca2fe1978
 vendor/etc/dolby/dax-default.xml|091dcfd86742a54c074993e33acae8146257c674
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7

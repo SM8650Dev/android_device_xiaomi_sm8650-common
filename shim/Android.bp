@@ -12,15 +12,3 @@ cc_library_shared {
     ],
     vendor: true,
 }
-
-cc_library_shared {
-    name: "libshim",
-    shared_libs: [
-        "libui",
-        "libutils",
-    ],
-    srcs: [
-        "libshim.cpp",
-    ],
-    vendor: true,
-}
