@@ -19,6 +19,9 @@ dontaudit hal_fingerprint_default vendor_hal_perf2_service:service_manager find;
 get_prop(hal_fingerprint_default, vendor_fp_prop)
 set_prop(hal_fingerprint_default, vendor_fp_prop)
 
+# Panel identity has its own property type; keep fingerprint reads working.
+get_prop(hal_fingerprint_default, vendor_panel_info_prop)
+
 get_prop(hal_fingerprint_default, vendor_fp_info_prop)
 set_prop(hal_fingerprint_default, vendor_fp_info_prop)
 

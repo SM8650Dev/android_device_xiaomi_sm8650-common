@@ -3,4 +3,14 @@ type vendor_touch_init_shell_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(vendor_touch_init_shell)
 
-allow vendor_touch_init_shell vendor_shell_exec:file entrypoint;
+# The stock panel script runs seq/cat/sleep and setprop from /vendor/bin.
+allow vendor_touch_init_shell vendor_shell_exec:file { rx_file_perms entrypoint };
+allow vendor_touch_init_shell vendor_toolbox_exec:file rx_file_perms;
+
+# Follow the class symlink and read identity without touch-node write access.
+allow vendor_touch_init_shell sysfs:dir search;
+allow vendor_touch_init_shell sysfs:lnk_file read;
+allow vendor_touch_init_shell sysfs_panel_info:file r_file_perms;
+allow vendor_touch_init_shell sysfs_touch_hostprocess:file r_file_perms;
+
+set_prop(vendor_touch_init_shell, vendor_panel_info_prop)
