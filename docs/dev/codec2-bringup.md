@@ -11,7 +11,11 @@ The former `libshim.so` defined the same symbol as an empty `void` function.
 That does not initialize the caller-provided shared pointer return storage on
 AArch64 and can leave invalid ownership state. Do not inject this shim into the
 QTI video, QTI audio, or Dolby Codec2 service. These executables now use the
-unmodified OS3.0.305.0.WNCMIXM blobs and their original hashes.
+unmodified OS3.0.307.0.WNCCNXM blobs and their original hashes.
+
+The current CN re-extraction preserves the ABI fix and Dolby XML includes.
+The device lifecycle checks below used the earlier Global baseline; repeat
+service and playback validation after installing the CN-based build.
 
 The 2026-11-17 device log also contains a Dolby service null dereference in
 `BnHwComponentStore::_hidl_createInterface` / `RefBase::decStrong`. Removing the

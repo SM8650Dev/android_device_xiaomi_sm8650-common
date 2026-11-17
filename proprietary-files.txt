@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Xiaomi 14 (OS3.0.305.0.WNCMIXM).
+## are from Xiaomi 14 (OS3.0.307.0.WNCCNXM).
 
 # ACDB
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd|a8d11b67e8a74bd0fb1f8d8bd7ea72c0c7f5954e
@@ -157,7 +157,7 @@ vendor/lib64/soundfx/libswvqe.so|f5ae5c24f5b46c69714f2e98ba256f3d8eb15563
 vendor/lib64/soundfx/libvisualizer.so|75cd7e3ae85e698e11b68a386c0b1be7e9e97399
 
 # Batterysecret
-vendor/bin/batterysecret|e80665a66852a1237bd376a7f2174147187a5549
+vendor/bin/batterysecret|fb97421d2e3354107a1f1b6adf8fa26532ca6e62
 vendor/etc/init/hw/init.batterysecret.rc|da896162a63358f757125cb5a2af74ca67b88dd9
 
 # Bluetooth
@@ -219,10 +219,10 @@ odm/firmware/CAMERA_ICP.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
 odm/firmware/CAMERA_ICP.b17|dcecbac406ec1fc4983bcd197eb9c75d057be459
 odm/firmware/CAMERA_ICP.b18|5600454e2a51f09189e7e1482e5dfef50e525473
 odm/firmware/CAMERA_ICP.b19|da39a3ee5e6b4b0d3255bfef95601890afd80709
-odm/firmware/CAMERA_ICP.b20|4412631b28b9842aeaf8ed81a3c08a21b664848d
+odm/firmware/CAMERA_ICP.b20|a57563c7842eda67d212cf9e40df993be9ce5dc5
 odm/firmware/CAMERA_ICP.elf|8bda352e99f3efe29be73d2d6531270f5fb60423
-odm/firmware/CAMERA_ICP.mbn|478b65ba41d99b8982a67e73549e5e17a087c9ef
-odm/firmware/CAMERA_ICP.mdt|23924679b93d4a1e11e39babf312c8e5ff4288fd
+odm/firmware/CAMERA_ICP.mbn|f8f2068622275cb3159af70f8c77f9fa36a7b4e7
+odm/firmware/CAMERA_ICP.mdt|0c02a7ae679c67d4d4c5ee05e2b5638dd90149a3
 
 # CDSP
 vendor/bin/cdsprpcd|cf1c3cac8690c0743891f42b4cd93b634eec019d
@@ -367,7 +367,7 @@ odm/firmware/evass.b15|da39a3ee5e6b4b0d3255bfef95601890afd80709
 odm/firmware/evass.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
 odm/firmware/evass.b17|da39a3ee5e6b4b0d3255bfef95601890afd80709
 odm/firmware/evass.b18|1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d
-odm/firmware/evass.b19|aaa60296238f6af280c8c3a3c3ea462d4fc056d8
+odm/firmware/evass.b19|000ec9a134c9997b27cbd7894759b4a64434deac
 odm/firmware/evass-lt.b00|6cb06305489bbd16db964e9721bd3b447d3b1671
 odm/firmware/evass-lt.b01|a291006ee4e6ec7c43a3a376d2bd87e056fc531a
 odm/firmware/evass-lt.b02|0f2275db439c22f02fdc2ec0bfbe25c6067d651c
@@ -390,8 +390,8 @@ odm/firmware/evass-lt.b18|1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d
 odm/firmware/evass-lt.b19|279a573fe5c49876fa356ed840a194629fe298f0
 odm/firmware/evass-lt.mbn|85e4b11478e40304983501c3ce3731de8f833c75
 odm/firmware/evass-lt.mdt|8c794b55344de44c32632102ebe54a7d5af39b82
-odm/firmware/evass.mbn|26619356c5e6c713a70917a43661c54e746f23c5
-odm/firmware/evass.mdt|802cc39817296a77cf51c9969437bc08cb9b0d3c
+odm/firmware/evass.mbn|c73a8c5917e050e67cc7468246aefe398992a15d
+odm/firmware/evass.mdt|ee94fc8f59282475f50a1b349af80b657b70c0a8
 odm/firmware/evass-product.mk|f49711e1e5d55ba2c10e24a5fa73e48d75a34fe9
 
 # Configstore
@@ -647,7 +647,7 @@ vendor/lib64/hw/libqtigatekeeper.so|a0b344a0b7e58b76b5453c99372bdc4c08f0ad9d
 # GNSS
 odm/bin/hw/android.hardware.gnss-aidl-service-qti|e7aad3fcca7ae090a827ffde10d4ad4285569833
 odm/etc/init/android.hardware.gnss-aidl-service-qti.rc|f93a17afa718e3682a2e41f8e08e06b50c2a8ea8
-odm/etc/izat_device.conf|337bf62bc32a3d7f95ffcdaec937f3abb407a20c
+odm/etc/izat_device.conf|50d659063e93e7a9fa44f3ea024ae52f42656130
 odm/etc/vintf/manifest/vendor.qti.gnss-service.xml|0305073391bb35c77406f471ff5b117828712853
 odm/lib64/android.hardware.gnss-aidl-impl-qti.so|03d2b60d5b70e0fa92d1e4918f4bc36d83b29f20
 odm/lib64/vendor.qti.gnss-service.so|05a37b77e983f9d69d20b3ff63078d06d7faafd9
@@ -752,7 +752,7 @@ vendor/lib64/libllvm-qgl.so|1f14ee0584577e54989c5f83f1ab27193902865f
 vendor/lib64/hw/vulkan.adreno.so|ebf6ba364fe813e888a33e912707e2dc7ae90dbf
 
 # Graphics (Adreno)
-odm/firmware/gen70900_zap.mbn|8725e63c2960664b790c5bddbbc409b962f5ed8f
+odm/firmware/gen70900_zap.mbn|d116e80c4320ece0d143d3609359a1657a447c61
 odm/firmware/gen71100_zap.mbn|a7fae005a0214b01494ffbe97f86a33828f0737f
 vendor/firmware/gen70900_aqe.fw|44f729497028b584e17248b5ef680946aa8e4d84
 vendor/firmware/gen70900_sqe.fw|65f7a1dc8ffb3771658076315a203d978fe1437e
@@ -784,17 +784,17 @@ system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar|64ccbb83a85b20b82664ee0
 system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|c6d520e5a2a518cabef1cfc7b7549f63ae284f5f
 system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|72f2ee30c671472609afdc7436ebc7729b5a0fcb
 system_ext/lib64/lib-imsvideocodec.so|bce4c1d657fb05355f1ce1dcf2ef4a8a2cd7e413
-system_ext/lib64/lib-imsvt.so|3bc9740cf9e92ec604ca2b7ba39428db49c75178
-system_ext/lib64/lib-imsvtextutils.so|ea2a9f8ef863c0ccedfa967c11ccf50678230eca
-system_ext/lib64/lib-imsvtutils.so|3d5f1e324f6baaa547f35c607cf48d330c5fc27e
+system_ext/lib64/lib-imsvt.so|571833e6d578ba2fb64a259052a4b6fdf5bb763b
+system_ext/lib64/lib-imsvtextutils.so|becfe69786834e0b65c4ce9526016c94aa8cbc01
+system_ext/lib64/lib-imsvtutils.so|1e8bb3a095b1704a18f7e4d23b1b1a84848ecfb3
 system_ext/lib64/libdiag_system.so|b423bd43eb46cc50a8c5e5748c46924a3dd59459
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|1eac50a6667c694db20c440615591cfb59a9c500
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|9adb751d5ce569e99be074db88d6a1ac7ad850f0
-system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so|b2a6605fcaefe011f68873db91a3dd4edf5c8785
-system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|ed9cf25e7ef793f9eb92a2d2ac007be049051985
-system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so|5b80881d9aaa5c861dac3bdc27e2b4b3da7a31aa
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|e650169e1528e7963c9c7898e6576a2b4aa7e690
-system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|9c0c50f4f0c0196f36b895cbdc3c2091889e6e2b
+system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so|a8d216276b17009e6c12108a45dd481cb4fd3a96
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|21832897ab986fcf58dbf6d2a1be84aeb7387de5
+system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so|d3f38714174fd3edaf226fcb787a4173490ab9fc
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|b65fc57443ca18c8300fd5e673b219b709612c93
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|2200adf5cef0030cdba135fa639fc8d5245a6ea6
 system_ext/priv-app/ims/ims.apk;REQUIRED=QtiTelephonyCompat|309b0cf24f335a1d974798cf85d697e89ddf3323
 vendor/bin/ims-dataservice-daemon|040e00cd6c1ff33e3fa6984d0961736368f9b4d4
 vendor/bin/ims_rtp_daemon|e802e2adb389ed75eab7197d95dfa057c0e00e24
@@ -908,7 +908,7 @@ vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so|601662aa30dc2407738cc0f
 # Media
 odm/lib64/vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk.so|c325fe825aa5f332e9f20634ac91fe5dc462d6cc
 system_ext/lib64/libmmosal.so|9e67e6fb7e29c9b05bbd6259058c0d8474a290ae
-system_ext/lib64/libmmparser_lite.so|ef94ae07ad3a8484540a55d6aad9dd7b3bd4b060
+system_ext/lib64/libmmparser_lite.so|6886957eda7038e235579f669694ba396898ed73
 vendor/bin/init.qti.media.sh|f20063f343a75acbc676de09ed39b6e4db15ba9a
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|b20d45c1523c925c6b17456a5f7b011052e3daed
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|3676062ea32b4d6bfdb7f9f7473537e43735bf62
@@ -1058,9 +1058,9 @@ odm/lib64/libQnnSystem.so|8b215672d7607985d301a9838f63edd23229817e
 
 # NFC
 system_ext/etc/permissions/com.nxp.nfc.nq.xml|76c7e4b4ffd88f3b37cb6996091ec9a0aecf2784
-odm/etc/libnfc-nci.conf|6f41678f4ac784549b2bcbadfce912cd2a347515
+odm/etc/libnfc-nci.conf|9e224f8b2bb035297899fed37bfb4b3ef7cdc5b6
 odm/etc/libnfc-nxp_RF.conf|77b7b43ed7e715052ba037991c18df39cadfda82
-odm/etc/libnfc-nxp.conf|43400f5bb78e54fc1b719c3965e6128263823afb
+odm/etc/libnfc-nxp.conf|0e946af1496cfd7850370ce07d7305a42de4e3f9
 odm/bin/hw/android.hardware.nqnfc-service.nxp|2041e642f21b7650956783a931a54903af9c12f0
 odm/etc/init/nfc-service-nxp.rc|caf848c6a7ad30041992b661756f1e7415643fb4
 odm/lib64/nfc_nci.nqx.default.hw.so|bb0ae7e352cb5c74f44767b24aa7de9a11cc08fa
@@ -1389,7 +1389,7 @@ system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar|64355b0aea27f7
 system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar|db7a8c67ab81c58a9ab2c9f788d13c17e77673f4
 system_ext/framework/xiaomi-modem-common.jar|576219e357ebe7e9dd8244bb666030a463243657
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|d26f1d07b7fa50f838feb323833926a27254dd3f
-system_ext/priv-app/QtiTelephony/QtiTelephony.apk;REQUIRED=QtiTelephonyCompat|596e625a0de579dd8d9b7c6abb0d89a0d262417d
+system_ext/priv-app/QtiTelephony/QtiTelephony.apk;REQUIRED=QtiTelephonyCompat|7d19fe27f4a2228e4a59e9d3aff303ee03b36f51
 vendor/app/IWlanService/IWlanService.apk|0dd2efbde94bbdabee718b3021c25cbe44741287
 vendor/bin/hw/qcrilNrd|49b2efbe88a01ece016d3e9cbeb324626019b28a
 vendor/bin/ks|8b3ef949c0ed510d1bf8a3aa205b2fb28028a9a5
@@ -1480,7 +1480,7 @@ vendor/lib64/libqcrilNrQtiBus.so|917b5d9abeb57cd53798e7f9787a76d1eb3756d9
 vendor/lib64/libqcrilNrQtiMutex.so|0050809c696cf85848e5c251813dd0b675a27b9d
 vendor/lib64/libqcrilNrSmsModule.so|311ebe113c2f930d64201d9309701daca82693f6
 vendor/lib64/libqcrilNrSocketModule.so|dbd29f45c563e7a191ec7da337e00c8f475b7a6d
-vendor/lib64/libqcrilNrVoiceModule.so|0f54dabb328cf8fda4375e15ddb35e4ad1ca10f1
+vendor/lib64/libqcrilNrVoiceModule.so|a33f3ea27d69978c8af581c15300ae564315a019
 vendor/lib64/libqcrildataaidl.so|7118c99e2e1442276bb4ea8aa0f10161ee24162e
 vendor/lib64/libqcrildatactl.so|2f6d7f00137d5907c4127e119c224f65164b6cd7
 vendor/lib64/libqcrildataqos.so|d0b384742fa49bde6a24fb1b70da2dad98e730ae
@@ -1493,8 +1493,8 @@ vendor/lib64/libqrtrclient.so|be3fd0bbce5525fd98e88f7ef5600df3fbd8238c
 vendor/lib64/libqsocket.so|bc4167bb1498f28d0033487b02889fb710a03983
 vendor/lib64/libril-db.so|aa69e04b7a33310e49e2890ba60bc0cb13382260
 vendor/lib64/libril-legacy.so|4158ce04bfd2a5ff90e69885b7c059381ec65f00
-vendor/lib64/libril-qc-ltedirectdisc.so|59d3be55a44c45cc33c38dea2f4c0d077dea391e
-vendor/lib64/libril-qc-radioconfig.so|58b8531efacfaf3476ca0f67eca6f5018ea752a8
+vendor/lib64/libril-qc-ltedirectdisc.so|0b6ae20bbbd1afd82bcdbce45cdf7a4a0ee1628c
+vendor/lib64/libril-qc-radioconfig.so|e98f6c24ef74258e2ba45c70715a0da461122e2d
 vendor/lib64/librilqmimiscservices.so|994f47cb5e3412a5f93f109d2b58ae6fd3fca88d
 vendor/lib64/libsmemlog.so|b85721b1c7f9ad9e0f17171d87388edb82224624
 vendor/lib64/libsystem_health_mon.so|84966c6caf7ea1542991dad4f22afc7c648f9e87
@@ -1673,7 +1673,7 @@ vendor/lib64/liblmthermallistner.so|a3e763d274195d18aeee6d71c8ec83e2f4506946
 vendor/lib64/libthermalclient.so|ac5e2d73d827a2f2dd55a575bc895fc3104b13cc
 
 # Thermal engine
-vendor/bin/mi_thermald|1e566f1b328f401a8a89e46d69c45fcf155b3a6e
+vendor/bin/mi_thermald|66439b19875a1fe65ad04f459a9bbaf6fca1327c
 vendor/bin/thermal-engine-v2|4eeb9fe2ed85dc6398d193dda8ead0ac5b810910
 vendor/etc/init/hw/init.mi_thermald.rc|6505d89e19957888612d89f6769585a7d26af080
 vendor/etc/init/init_thermal-engine-v2.rc|a6a7cf9e5c6363a10cdadc9f569f7746ef914fdd
@@ -1756,7 +1756,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so|7c34284aa007ba8e6afdb63e4fb6493c2ce4
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so|242e38e622c0d70aefc572dfb55b918c4af99db5
 
 # VPU firmware
-odm/firmware/vpu33_4v.mbn|1a393c205fadd80f24edde16ba2573f36d326e19
+odm/firmware/vpu33_4v.mbn|3be3c1672505c418040999a3751478df00342a2b
 odm/firmware/vpu33_4v_unsigned.mbn|60e2be418070bc0d5be7727d4061f2d0c5309cea
 
 # Widevine DRM

@@ -1,5 +1,10 @@
 # PowerHAL interaction boost
 
+The current extraction baseline is CN OS3.0.307.0.WNCCNXM. Its original
+perfboostsconfig.xml is byte-identical to the earlier Global file, so the
+fallback fix and pinned hashes remain the same. The live checks below used
+the Global baseline; verify behavior again on the rebuilt CN-based ROM.
+
 The QTI PowerHAL sends vertical-scroll hint `0x1080`, type 1. The stock
 OS3.0.305.0.WNCMIXM configuration supplies pineapple entries only at 60, 90,
 120, 144, 180 and 240 fps. The perf service also operates at 30 fps on this
