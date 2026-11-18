@@ -22,7 +22,9 @@ genfs entry so the label is available before a userspace restorecon.
 
 All four properties have exact string entries under a dedicated
 `vendor_panel_info_prop` type. The script can set that type; fingerprint HAL
-retains read access. The script receives no write permission on touch sysfs
+retains read access. ADB shell also has explicit read access for diagnostics;
+without it, getprop returns empty values and logs a property-file read denial.
+The script receives no write permission on touch sysfs
 nodes and no write permission on unrelated fingerprint or default properties.
 SELinux remains Enforcing. No stock blob or Android platform source was edited.
 
@@ -35,8 +37,11 @@ tool execution, node reads, property-service access, logging and fingerprint
 reads, and checked the absence of the unrelated write permissions above.
 No unit tests were added and no full ROM build was run.
 
-The phone has not been flashed with this policy. After rebuilding and installing
-the ROM, inspect:
+The 2026-11-18 build includes the initial script policy; its captured boot log
+contains none of the former script execution denials. ADB reads were still
+denied by the dedicated property type, so that empty output cannot establish
+that initialization failed. The added shell read permission has not yet been
+installed. After rebuilding and installing the ROM, inspect:
 
 ```sh
 adb shell getprop vendor.panel.color

@@ -14,3 +14,6 @@ allow vendor_touch_init_shell sysfs_panel_info:file r_file_perms;
 allow vendor_touch_init_shell sysfs_touch_hostprocess:file r_file_perms;
 
 set_prop(vendor_touch_init_shell, vendor_panel_info_prop)
+
+# Permit read-only ADB verification of the four panel identity properties.
+get_prop(shell, vendor_panel_info_prop)
