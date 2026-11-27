@@ -97,6 +97,16 @@ blob_fixups: blob_fixups_user_type = {
             r'(<Include href="media_codecs_c2_audio\.xml" />)(?!\s*<Include href="media_codecs_dolby_audio\.xml")',
             r'\1\n    <Include href="media_codecs_dolby_audio.xml" />',
         ),
+    # The source WALT scheduler provides migration controls under /proc/sys/walt.
+    'vendor/etc/perf/targetresourceconfigs.xml': blob_fixup()
+        .regex_replace(
+            'MajorValue="0x3" MinorValue="0x7" Supported="no"',
+            'MajorValue="0x3" MinorValue="0x7" Node="/proc/sys/walt/sched_upmigrate" Supported="yes"',
+        )
+        .regex_replace(
+            'MajorValue="0x3" MinorValue="0x8" Supported="no"',
+            'MajorValue="0x3" MinorValue="0x8" Node="/proc/sys/walt/sched_downmigrate" Supported="yes"',
+        ),
     # Let PowerHAL request vertical-scroll boost while perf tracks 30/45 fps.
     'vendor/etc/perf/perfboostsconfig.xml': blob_fixup()
         .regex_replace(
