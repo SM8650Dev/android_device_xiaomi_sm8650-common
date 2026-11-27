@@ -1,12 +1,14 @@
 [
   {
-    "repository": "nian0114/android_vendor_xiaomi_sm8650-common",
+    "repository": "SM8650Dev/android_vendor_xiaomi_sm8650-common",
+    "remote": "houji-github",
     "target_path": "vendor/xiaomi/sm8650-common",
     "branch": "lineage-23.2"
   },
   {
     "repository": "lolipuru/android_hardware_xiaomi",
+    "remote": "houji-github",
     "target_path": "hardware/xiaomi",
-    "branch": "lineage-23.2"
+    "branch": "69ec6aee6584f5e2937669b5bbfee2853a2bdf59"
   }
 ]
