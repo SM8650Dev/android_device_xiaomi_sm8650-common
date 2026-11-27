@@ -112,6 +112,16 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(
             'Id="0x00001080" Type="1" Enable="true" Target="pineapple" Fps="60"',
             'Id="0x00001080" Type="1" Enable="true" Target="pineapple"',
+        )
+        .regex_replace(
+            r',\s*0[xX]5[fF][cC]08000,\s*(?:0[xX][0-9a-fA-F]+|[0-9]+)',
+            '',
+        ),
+    # sched_roottg_control is an OEM extension absent from the source scheduler.
+    'vendor/etc/perf/perfboostselection.xml': blob_fixup()
+        .regex_replace(
+            r',\s*0[xX]5[fF][cC]08000,\s*(?:0[xX][0-9a-fA-F]+|[0-9]+)',
+            '',
         ),
     (
         'vendor/etc/media_codecs_pinaepple.xml', 
