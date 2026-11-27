@@ -28,3 +28,6 @@ set_prop(hal_fingerprint_default, vendor_fp_info_prop)
 add_service(hal_fingerprint_default, vendor_hal_fingerprint_service_xiaomi)
 
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
+
+# Keep fingerprint callbacks working with the FOD event node label.
+allow hal_fingerprint_default sysfs_tp_fodstatus:file rw_file_perms;

@@ -34,3 +34,6 @@ genfscon sysfs "/devices/platform/soc/soc:fingerprint_goodix/wakeup"            
 genfscon sysfs "/devices/platform/soc/soc:jingshang_mdm/wakeup"                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs "/devices/platform/soc/soc:xiaomi_wifi_gpio/wakeup"                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs "/devices/platform/synaptics_tcm.0/wakeup"                                         u:object_r:sysfs_wakeup:s0
+
+# One-shot screen-off fingerprint gesture control.
+genfscon sysfs /devices/virtual/touch/touch_dev/fod_longpress_gesture_enabled u:object_r:vendor_sysfs_fod_gesture:s0

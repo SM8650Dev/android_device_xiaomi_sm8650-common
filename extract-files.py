@@ -80,6 +80,8 @@ def fixup_codec2_component_store_size(
 
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/etc/sensors/hals.conf': blob_fixup()
+        .add_line_if_missing('sensors.xiaomi.v2.so'),
     (
         'vendor/bin/hw/vendor.dolby.media.c2@1.0-service',
         'vendor/bin/hw/vendor.qti.media.c2@1.0-service',
